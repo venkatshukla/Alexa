@@ -1,0 +1,105 @@
+{
+  "languageModel": {
+    "types": [
+      {
+        "name": "crypto",
+        "values": [
+          {
+            "id": "5",
+            "name": {
+              "value": "LTC",
+              "synonyms": [
+                "ltc",
+                "Litecoin"
+              ]
+            }
+          },
+          {
+            "id": "4",
+            "name": {
+              "value": "ETH",
+              "synonyms": [
+                "eth",
+                "Ether",
+                "Ethereum"
+              ]
+            }
+          },
+          {
+            "id": "3",
+            "name": {
+              "value": "BCH",
+              "synonyms": [
+                "bch",
+                "Bitcoin Cash"
+              ]
+            }
+          },
+          {
+            "id": "2",
+            "name": {
+              "value": "BTC",
+              "synonyms": [
+                "btc",
+                "Bitcoin"
+              ]
+            }
+          },
+          {
+            "id": "1",
+            "name": {
+              "value": "XRP",
+              "synonyms": [
+                "xrp",
+                "ripple",
+                "Ripple"
+              ]
+            }
+          }
+        ]
+      }
+    ],
+    "intents": [
+      {
+        "name": "AMAZON.CancelIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.HelpIntent",
+        "samples": []
+      },
+      {
+        "name": "AMAZON.StopIntent",
+        "samples": []
+      },
+      {
+        "name": "AnswerIntent",
+        "samples": [
+          "tell {crypto} price",
+          "tell price of {crypto}",
+          "tell me price of {crypto}",
+          "{crypto} price",
+          "price of {crypto}",
+          "{crypto}"
+        ],
+        "slots": [
+          {
+            "name": "crypto",
+            "type": "crypto"
+          }
+        ]
+      },
+      {
+        "name": "LaunchRequest",
+        "samples": [
+          "Hi Cryptocurrency India",
+          "Crypto Currency India",
+          "Cryptocurrency India",
+          "Hello Cryptocurrency India"
+        ],
+        "slots": []
+      }
+    ],
+    "invocationName": "cryptocurrency india"
+  }
+}
